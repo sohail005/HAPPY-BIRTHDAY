@@ -1,5 +1,5 @@
 function initengahan(){
-  kadoIn.style = "display:none";
+  // kadoIn.style = "display:none";
   ket.style = "display:none";
   Content.style = "opacity:1;margin-top:0";
   bodyblur.style = "opacity:.7";
