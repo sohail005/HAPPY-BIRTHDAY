@@ -127,21 +127,22 @@
     };
 
     async function inipesan() {
-      var { value: nama } = await swals.fire({
-        title: "What's your beautiful name?",
-        input: "text",
-      });
+      let nama = "Ammu ❤";
+      // var { value: nama } = await swals.fire({
+      //   title: "What's your beautiful name?",
+      //   input: "text",
+      // });
       if (nama && nama.length < 11) {
         window.nama = nama;
         vketikhalo = "Happy Birthday, " + nama + "!";
-        // mulainama();
+        mulainama();
       } else {
         await Swal.fire({
           title: "Your name is lovely, but it seems a bit long.",
           text: "Please enter a shorter name.",
           icon: "warning",
         });
-        inipesan();
+        // inipesan();
       }
     }
 
